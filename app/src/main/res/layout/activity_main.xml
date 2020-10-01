@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/potato"
+        android:layout_width="377dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/macarrones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="TOPPING"
+        android:layout_below="@+id/potato" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cosa 1"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/macarrones"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cosa 2"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/checkBox"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:text="+"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@id/editTextNumber2"
+        android:layout_alignBaseline="@id/editTextNumber2"
+         />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="18dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_centerInParent="true"
+        tools:text="2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_margin="10dp"
+        android:text="-"
+        android:layout_toLeftOf="@id/editTextNumber2"
+        android:layout_alignBaseline="@id/editTextNumber2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="order sumary"
+        android:layout_alignTop="@id/button3"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="125dp"
+        android:layout_height="36dp"
+        android:text="order"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+         />
+
+</RelativeLayout>
